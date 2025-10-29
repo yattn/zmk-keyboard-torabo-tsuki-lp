@@ -23,7 +23,7 @@
 &trans  &trans  &trans  &trans     &trans     &trans                  &trans  &trans     &trans     &trans  &trans  &trans
 &trans  &trans  &trans  &mkp RCLK  &mkp LCLK  &trans  &none   &none   &trans  &mkp LCLK  &mkp RCLK  &trans  &trans  &trans
 &trans  &trans  &trans  &trans     &trans     &trans  &trans  &trans  &trans  &trans     &trans     &trans  &trans  &trans
-&to 1   &trans  &trans  &trans     &trans     &trans  &none   &trans  &trans  &trans     &trans     &trans  &trans  &trans
+&to 1   &trans  &trans  &trans     &trans     &trans  &none   &trans  &trans  &none      &none      &trans  &trans  &trans
             >;
         };
 
