@@ -28,7 +28,7 @@
             >;
         };
 
-        layer_2 {
+        scroll_layer: scroll_layer {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
