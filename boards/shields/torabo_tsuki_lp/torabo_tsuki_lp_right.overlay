@@ -12,10 +12,6 @@
     };
 };
 
-&scroll_layer {
-    input-listener = <&scroll_listener>;
-};
-
 &size_s_transform {
     col-offset = <7>;
 };
