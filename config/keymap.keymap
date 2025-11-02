@@ -21,8 +21,8 @@
         track {
             bindings = <
 &none   &none   &none   &none   &none   &none                     &none           &none      &none      &none             &none      &none
-&trans  &trans  &trans  &trans  &trans  &trans                    &kp LG(ESC)     &none      &none      &none             &none      &none
-&trans  &trans  &trans  &trans  &trans  &trans  &none   &none     &msc SCRL_UP    &mkp LCLK  &mkp MCLK  &msc MOVE_Y(15)   &mkp RCLK  &mkp RCLK
+&trans  &trans  &trans  &trans  &trans  &trans                    &kp LG(ESC)     &none      &none      &msc MOVE_Y(15)   &none      &none
+&trans  &trans  &trans  &trans  &trans  &trans  &none   &none     &msc SCRL_UP    &mkp LCLK  &mkp MCLK  &mo 2             &mkp RCLK  &mkp RCLK
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &none     &msc SCRL_DOWN  &mkp LCLK  &mkp MCLK  &msc MOVE_Y(-15)  &mkp RCLK  &mkp RCLK
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp MB4  &mkp MB5        &none      &none      &none             &none      &none
             >;
