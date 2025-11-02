@@ -40,11 +40,11 @@
 
         sub {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans           &trans          &trans
-&trans  &trans  &kp F2  &trans  &trans  &trans                  &trans  &trans  &trans  &mt UNDER MINUS  &mt PLUS EQUAL  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mt LBRC LBKT    &mt RBRC RBKT   &mt PIPE BSLH
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans           &trans          &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans           &trans          &trans
+&none  &none  &none   &none  &none  &none                &none  &none  &none  &none            &none           &none
+&none  &none  &kp F2  &none  &none  &none                &none  &none  &none  &mt UNDER MINUS  &mt PLUS EQUAL  &none
+&none  &none  &none   &none  &none  &none  &none  &none  &none  &none  &none  &mt LBRC LBKT    &mt RBRC RBKT   &mt PIPE BSLH
+&none  &none  &none   &none  &none  &none  &none  &none  &none  &none  &none  &none            &none           &none
+&none  &none  &none   &none  &none  &none  &none  &none  &none  &none  &none  &none            &none           &none
             >;
         };
     };
