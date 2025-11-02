@@ -13,13 +13,12 @@
         };
     };
 
-    keymap {
-        compatible = "zmk,keymap";
-    };
-
     &mt {
         flavor = "tap-preferred";
     };
+
+    keymap {
+        compatible = "zmk,keymap";
 
         main {
             bindings = <
