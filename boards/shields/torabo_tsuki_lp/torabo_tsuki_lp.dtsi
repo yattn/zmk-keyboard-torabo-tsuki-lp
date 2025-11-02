@@ -98,7 +98,8 @@
         compatible = "zmk,input-listener";
         device = <&trackball>;
         input-processors =
-            <&zip_xy_transform (INPUT_TRANSFORM_ZERO_X | INPUT_TRANSFORM_INVERT_Y)>,
+            <&zip_xy_transform (INPUT_TRANSFORM_ZERO_X)>,
+            <&zip_xy_transform (INPUT_TRANSFORM_INVERT_Y)>,
             <&zip_xy_to_scroll_mapper>,
             <&zip_scroll_scaler 1 128>;
     };
