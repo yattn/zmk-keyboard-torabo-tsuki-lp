@@ -161,9 +161,3 @@
         power-gpios = <&gpio0 8 (GPIO_ACTIVE_HIGH | NRF_GPIO_DRIVE_H1)>;
     };
 };
-
-&mt {
-    flavor = "tap-preferred";
-};
-
-
