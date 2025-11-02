@@ -20,10 +20,6 @@
     };
 };
 
-&mt {
-    flavor = "tap-preferred";
-};
-
 &size_s_transform {
     col-offset = <7>;
 };
