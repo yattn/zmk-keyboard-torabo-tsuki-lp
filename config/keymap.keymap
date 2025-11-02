@@ -3,7 +3,24 @@
 #include <dt-bindings/zmk/pointing.h>
 
 / {
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        LCLK {
+            bindings = <&mkp LCLK>;
+            key-positions = <33 34>;
+        };
+
+        RCLK {
+            bindings = <&mkp RCLK>;
+            key-positions = <34 35>;
+        };
+
+        MCLK {
+            bindings = <&mkp MCLK>;
+            key-positions = <19 20 21>;
+        };
+    };
 
     keymap {
         compatible = "zmk,keymap";
