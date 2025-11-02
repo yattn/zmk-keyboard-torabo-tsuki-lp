@@ -16,6 +16,10 @@
     keymap {
         compatible = "zmk,keymap";
 
+    &mt {
+        flavor = "tap-preferred";
+    };
+
         main {
             bindings = <
 &none           &none     &none         &none         &none        &none                                      &none        &none     &none        &none         &none           &none
