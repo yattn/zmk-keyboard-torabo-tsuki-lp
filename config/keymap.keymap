@@ -6,19 +6,22 @@
     combos {
         compatible = "zmk,combos";
 
-        LCLK {
+        jklclk {
             bindings = <&mkp LCLK>;
             key-positions = <33 34>;
+            layers = <0>;
         };
 
-        RCLK {
+        klrclk {
             bindings = <&mkp RCLK>;
             key-positions = <34 35>;
+            layers = <0>;
         };
 
-        MCLK {
+        jklmclk {
             bindings = <&mkp MCLK>;
             key-positions = <19 20 21>;
+            layers = <0>;
         };
     };
 
