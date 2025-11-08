@@ -13,18 +13,6 @@
             key-positions = <18 19>;
             layers = <1>;
         };
-
-        scroll {
-            bindings = <&mo 2>;
-            key-positions = <34 35 58>;
-            layers = <0 1>;
-        };
-
-        scroll2 {
-            bindings = <&mo 2>;
-            key-positions = <34 35>;
-            layers = <1 0>;
-        };
     };
 
     keymap {
@@ -43,7 +31,7 @@
         track {
             bindings = <
 &none   &none   &none   &none   &none   &none                  &none     &none             &none             &none             &none             &none
-&to 0   &trans  &trans  &trans  &trans  &trans                 &none     &msc MOVE_Y(20)   &msc MOVE_Y(20)   &msc MOVE_Y(20)   &none             &kp DEL
+&to 0   &trans  &trans  &trans  &trans  &trans                 &none     &msc MOVE_Y(20)   &msc MOVE_Y(20)   &msc MOVE_Y(20)   &mo 2             &kp DEL
 &trans  &trans  &trans  &trans  &trans  &trans  &none   &none  &mkp MB4  &mkp LCLK         &mkp MCLK         &mkp RCLK         &mkp MB5          &none
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &none  &none     &msc MOVE_Y(-20)  &msc MOVE_Y(-20)  &msc MOVE_Y(-20)  &none             &msc MOVE_Y(20)
 &trans  &trans  &trans  &trans  &to 0   &to 0   &to 0   &to 0  &to 0     &none             &none             &none             &msc MOVE_Y(-20)  &none
