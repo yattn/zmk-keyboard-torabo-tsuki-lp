@@ -17,7 +17,13 @@
         scroll {
             bindings = <&mo 2>;
             key-positions = <34 35 58>;
-            layers = <0 2>;
+            layers = <0 1>;
+        };
+
+        scroll2 {
+            bindings = <&mo 2>;
+            key-positions = <34 35>;
+            layers = <1 0>;
         };
     };
 
@@ -26,11 +32,11 @@
 
         main {
             bindings = <
-&none           &none     &none     &none         &none        &none                                      &none        &none     &none      &none       &none           &none
-&mt GRAVE ESC   &mt N1 Q  &mt N2 W  &mt N3 E      &mt N4 R     &mt N5 T                                   &mt N6 Y     &mt N7 U  &mt N8 I   &mt N9 O    &mt N0 P        &kp BSPC
-&kp TAB         &kp A     &kp S     &kp D         &kp F        &kp G        &none          &none          &kp H        &kp J     &kp K      &kp L       &mt DQT SEMI    &mt BACKSLASH ENTER
-&kp LEFT_SHIFT  &kp Z     &kp X     &kp C         &kp V        &kp B        &mt LBKT LPAR  &mt RBKT RPAR  &kp N        &kp M     &kp COMMA  &kp PERIOD  &kp SLASH       &kp UP
-&kp LCTRL       &kp LGUI  &kp LGUI  &kp LEFT_ALT  &lt 3 SPACE  &lt 3 SPACE  &lt 1 SPACE    &lt 3 SPACE    &lt 3 SPACE  &none     &none      &kp LEFT    &kp DOWN_ARROW  &kp RIGHT
+&none          &none     &none     &none         &none        &none                                      &none        &none  &none      &none       &none           &none
+&mt GRAVE ESC  &kp Q     &kp W     &kp E         &kp R        &kp T                                      &kp Y        &kp U  &kp I      &kp O       &kp P           &kp BSPC
+&kp TAB        &kp A     &kp S     &kp D         &kp F        &kp G        &none          &none          &kp H        &kp J  &kp K      &kp L       &mt DQT SEMI    &mt BACKSLASH ENTER
+&kp LSHIFT     &kp Z     &kp X     &kp C         &kp V        &kp B        &mt LBKT LPAR  &mt RBKT RPAR  &kp N        &kp M  &kp COMMA  &kp PERIOD  &kp SLASH       &kp UP
+&kp LCTRL      &kp LGUI  &kp LGUI  &kp LEFT_ALT  &lt 3 SPACE  &lt 3 SPACE  &lt 1 SPACE    &to 1          &lt 3 SPACE  &none  &none      &kp LEFT    &kp DOWN_ARROW  &kp RIGHT
             >;
         };
 
@@ -40,7 +46,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans                 &none     &msc MOVE_Y(20)   &msc MOVE_Y(20)   &msc MOVE_Y(20)   &none             &kp DEL
 &trans  &trans  &trans  &trans  &trans  &trans  &none   &none  &none     &mkp LCLK         &mkp MCLK         &mkp RCLK         &mkp MB5          &none
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &none  &none     &msc MOVE_Y(-20)  &msc MOVE_Y(-20)  &msc MOVE_Y(-20)  &none             &msc MOVE_Y(20)
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &none  &mkp MB4  &none             &none             &none             &msc MOVE_Y(-20)  &none
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &to 0  &mkp MB4  &none             &none             &none             &msc MOVE_Y(-20)  &none
             >;
         };
 
@@ -56,11 +62,11 @@
 
         sub {
             bindings = <
-&none  &none   &none   &none         &none   &none                 &none   &none   &none   &none            &none           &none
-&none  &none   &kp F2  &none         &none   &none                 &kp F6  &kp F7  &none   &mt UNDER MINUS  &mt PLUS EQUAL  &kp BACKSPACE
-&none  &kp N1  &kp N2  &kp NUMBER_3  &kp N4  &kp N5  &none  &none  &kp N6  &kp N7  &kp N8  &kp N9           &kp N0          &mt PIPE BSLH
-&none  &none   &none   &none         &none   &none   &none  &none  &none   &none   &none   &none            &none           &none
-&none  &none   &none   &none         &none   &none   &none  &none  &none   &none   &none   &none            &none           &none
+&none       &none   &none   &none         &none   &none                 &none   &none   &none   &none            &none           &none
+&none       &none   &kp F2  &none         &none   &none                 &kp F6  &kp F7  &none   &mt UNDER MINUS  &mt PLUS EQUAL  &kp BACKSPACE
+&none       &kp N1  &kp N2  &kp NUMBER_3  &kp N4  &kp N5  &none  &none  &kp N6  &kp N7  &kp N8  &kp N9           &kp N0          &mt PIPE BSLH
+&kp LSHIFT  &none   &none   &none         &none   &none   &none  &none  &none   &none   &none   &none            &none           &none
+&none       &none   &none   &none         &none   &none   &none  &none  &none   &none   &none   &none            &none           &none
             >;
         };
     };
