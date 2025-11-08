@@ -30,7 +30,7 @@
 &mt GRAVE ESC   &mt N1 Q  &mt N2 W  &mt N3 E      &mt N4 R     &mt N5 T                                   &mt N6 Y     &mt N7 U  &mt N8 I   &mt N9 O    &mt N0 P        &kp BSPC
 &kp TAB         &kp A     &kp S     &kp D         &kp F        &kp G        &none          &none          &kp H        &kp J     &kp K      &kp L       &mt DQT SEMI    &mt BACKSLASH ENTER
 &kp LEFT_SHIFT  &kp Z     &kp X     &kp C         &kp V        &kp B        &mt LBKT LPAR  &mt RBKT RPAR  &kp N        &kp M     &kp COMMA  &kp PERIOD  &kp SLASH       &kp UP
-&kp LCTRL       &kp LGUI  &kp LGUI  &kp LEFT_ALT  &lt 1 SPACE  &lt 1 SPACE  &lt 3 SPACE    &lt 3 SPACE    &lt 1 SPACE  &none     &none      &kp LEFT    &kp DOWN_ARROW  &kp RIGHT
+&kp LCTRL       &kp LGUI  &kp LGUI  &kp LEFT_ALT  &lt 3 SPACE  &lt 3 SPACE  &lt 1 SPACE    &lt 3 SPACE    &lt 3 SPACE  &none     &none      &kp LEFT    &kp DOWN_ARROW  &kp RIGHT
             >;
         };
 
