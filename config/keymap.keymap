@@ -46,7 +46,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans                 &none     &msc MOVE_Y(20)   &msc MOVE_Y(20)   &msc MOVE_Y(20)   &none             &kp DEL
 &trans  &trans  &trans  &trans  &trans  &trans  &none   &none  &none     &mkp LCLK         &mkp MCLK         &mkp RCLK         &mkp MB5          &none
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &none  &none     &msc MOVE_Y(-20)  &msc MOVE_Y(-20)  &msc MOVE_Y(-20)  &none             &msc MOVE_Y(20)
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &to 0  &mkp MB4  &none             &none             &none             &msc MOVE_Y(-20)  &none
+&trans  &trans  &trans  &trans  &trans  &trans  &to 0   &to 0  &mkp MB4  &none             &none             &none             &msc MOVE_Y(-20)  &none
             >;
         };
 
