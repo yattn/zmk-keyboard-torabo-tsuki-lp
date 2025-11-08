@@ -14,10 +14,10 @@
             layers = <1>;
         };
 
-        midclk1 {
-            bindings = <&mkp MCLK>;
-            key-positions = <34 35>;
-            layers = <1>;
+        scroll {
+            bindings = <&mo 2>;
+            key-positions = <34 35 58>;
+            layers = <0 2>;
         };
     };
 
@@ -36,11 +36,11 @@
 
         track {
             bindings = <
-&none   &none   &none   &none   &none   &none                  &none     &none      &none      &none             &none             &none
-&trans  &trans  &trans  &trans  &trans  &trans                 &none     &none      &none      &none             &none             &kp DEL
-&trans  &trans  &trans  &trans  &trans  &trans  &none   &none  &none     &mkp LCLK  &mkp RCLK  &msc MOVE_Y(20)   &mkp MB5          &none
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &none  &none     &none      &none      &msc MOVE_Y(-20)  &none             &msc MOVE_Y(20)
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &none  &mkp MB4  &none      &none      &none             &msc MOVE_Y(-20)  &none
+&none   &none   &none   &none   &none   &none                  &none     &none             &none             &none             &none             &none
+&trans  &trans  &trans  &trans  &trans  &trans                 &none     &msc MOVE_Y(20)   &msc MOVE_Y(20)   &msc MOVE_Y(20)   &none             &kp DEL
+&trans  &trans  &trans  &trans  &trans  &trans  &none   &none  &none     &mkp LCLK         &mkp MCLK         &mkp RCLK         &mkp MB5          &none
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &none  &none     &msc MOVE_Y(-20)  &msc MOVE_Y(-20)  &msc MOVE_Y(-20)  &none             &msc MOVE_Y(20)
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &none  &mkp MB4  &none             &none             &none             &msc MOVE_Y(-20)  &none
             >;
         };
 
