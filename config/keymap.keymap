@@ -19,12 +19,6 @@
             key-positions = <34 35>;
             layers = <1>;
         };
-
-        midclk2 {
-            bindings = <&mkp MCLK>;
-            key-positions = <49 48>;
-            layers = <1>;
-        };
     };
 
     keymap {
@@ -42,11 +36,11 @@
 
         track {
             bindings = <
-&none   &none   &none   &none   &none   &none                     &none     &none      &none             &none             &none      &none
-&trans  &trans  &trans  &trans  &trans  &trans                    &none     &none      &msc MOVE_Y(20)   &msc MOVE_Y(20)   &none      &kp DEL
-&trans  &trans  &trans  &trans  &trans  &trans  &none   &none     &none     &mkp LCLK  &msc MOVE_Y(-20)  &msc MOVE_Y(-20)  &mkp RCLK  &mkp RCLK
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &none     &none     &mkp LCLK  &msc MOVE_Y(-20)  &msc MOVE_Y(-20)  &mkp RCLK  &mkp RCLK
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp MB4  &mkp MB5  &none      &none             &none             &none      &none
+&none   &none   &none   &none   &none   &none                     &none     &none             &none             &none             &none  &none
+&trans  &trans  &trans  &trans  &trans  &trans                    &none     &msc MOVE_Y(20)   &msc MOVE_Y(20)   &msc MOVE_Y(20)   &none  &kp DEL
+&trans  &trans  &trans  &trans  &trans  &trans  &none   &none     &none     &mkp LCLK         &mkp RCLK         &mkp RCLK         &none  &none
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &none     &none     &msc MOVE_Y(-20)  &msc MOVE_Y(-20)  &msc MOVE_Y(-20)  &none  &none
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp MB4  &mkp MB5  &none             &none             &none             &none  &none
             >;
         };
 
