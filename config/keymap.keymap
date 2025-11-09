@@ -13,6 +13,12 @@
             key-positions = <18 19>;
             layers = <1>;
         };
+
+        scrool1 {
+            bindings = <&mo 2>;
+            key-positions = <35 35 34>;
+            layers = <0 1>;
+        };
     };
 
     keymap {
@@ -24,14 +30,14 @@
 &mt GRAVE ESC  &kp Q     &kp W     &kp E         &kp R        &kp T                                      &kp Y        &kp U  &kp I      &kp O       &kp P           &kp BSPC
 &kp TAB        &kp A     &kp S     &kp D         &kp F        &kp G        &none          &none          &kp H        &kp J  &kp K      &kp L       &mt DQT SEMI    &mt BACKSLASH ENTER
 &kp LSHIFT     &kp Z     &kp X     &kp C         &kp V        &kp B        &mt LBKT LPAR  &mt RBKT RPAR  &kp N        &kp M  &kp COMMA  &kp PERIOD  &kp SLASH       &kp UP
-&kp LCTRL      &kp LGUI  &kp LGUI  &kp LEFT_ALT  &lt 3 SPACE  &lt 2 SPACE  &lt 1 SPACE    &to 1          &lt 3 SPACE  &none  &none      &kp LEFT    &kp DOWN_ARROW  &kp RIGHT
+&kp LCTRL      &kp LGUI  &kp LGUI  &kp LEFT_ALT  &lt 3 SPACE  &lt 3 SPACE  &lt 1 SPACE    &to 1          &lt 3 SPACE  &none  &none      &kp LEFT    &kp DOWN_ARROW  &kp RIGHT
             >;
         };
 
         track {
             bindings = <
 &none   &none   &none   &none   &none   &none                  &none     &none            &none             &none             &none             &none
-&to 0   &trans  &trans  &trans  &trans  &trans                 &none     &msc MOVE_Y(5)   &msc MOVE_Y(10)   &msc MOVE_Y(20)   &mo 2             &to 0
+&to 0   &trans  &trans  &trans  &trans  &trans                 &none     &msc MOVE_Y(5)   &msc MOVE_Y(10)   &msc MOVE_Y(20)   &none             &to 0
 &trans  &trans  &trans  &trans  &trans  &trans  &none   &none  &mkp MB4  &mkp LCLK        &mkp MCLK         &mkp RCLK         &mkp MB5          &none
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &none  &none     &msc MOVE_Y(-5)  &msc MOVE_Y(-10)  &msc MOVE_Y(-20)  &none             &msc MOVE_Y(20)
 &trans  &trans  &trans  &trans  &to 0   &to 0   &to 0   &to 0  &to 0     &none            &none             &none             &msc MOVE_Y(-20)  &none
@@ -50,11 +56,11 @@
 
         sub {
             bindings = <
-&none       &none   &none   &none         &none   &none                 &none   &none   &none   &none            &none           &none
-&none       &none   &kp F2  &none         &none   &none                 &kp F6  &kp F7  &none   &mt UNDER MINUS  &mt PLUS EQUAL  &kp BACKSPACE
-&none       &kp N1  &kp N2  &kp NUMBER_3  &kp N4  &kp N5  &none  &none  &kp N6  &kp N7  &kp N8  &kp N9           &kp N0          &mt PIPE BSLH
-&kp LSHIFT  &none   &none   &none         &none   &none   &none  &none  &none   &none   &none   &none            &none           &none
-&none       &none   &none   &none         &none   &none   &none  &none  &none   &none   &none   &none            &none           &none
+&none       &none            &none        &none         &none       &none                      &none      &none          &none         &none            &none           &none
+&none       &kp EXCLAMATION  &kp AT_SIGN  &kp POUND     &kp DOLLAR  &kp PERCENT                &kp CARET  &kp AMPERSAND  &kp ASTERISK  &mt UNDER MINUS  &mt PLUS EQUAL  &kp BACKSPACE
+&none       &kp N1           &kp N2       &kp NUMBER_3  &kp N4      &kp N5       &none  &none  &kp N6     &kp N7         &kp N8        &kp N9           &kp N0          &mt PIPE BSLH
+&kp LSHIFT  &none            &none        &none         &none       &none        &none  &none  &none      &none          &none         &none            &none           &none
+&none       &none            &none        &none         &none       &none        &none  &none  &none      &none          &none         &none            &none           &none
             >;
         };
     };
