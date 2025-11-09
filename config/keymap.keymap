@@ -44,7 +44,7 @@
             >;
         };
 
-        scroll {
+        scroll_layer: scroll {
             bindings = <
 &none  &none  &none  &none  &none  &none                &none  &none  &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none                &none  &none  &none  &none  &none  &none
