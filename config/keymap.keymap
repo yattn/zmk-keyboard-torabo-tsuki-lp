@@ -26,11 +26,11 @@
 
         main {
             bindings = <
-&none          &none     &none     &none         &none        &none                                      &none        &none  &none      &none       &none           &none
-&mt GRAVE ESC  &kp Q     &kp W     &kp E         &kp R        &kp T                                      &kp Y        &kp U  &kp I      &kp O       &kp P           &kp BSPC
-&kp TAB        &kp A     &kp S     &kp D         &kp F        &kp G        &none          &none          &kp H        &kp J  &kp K      &kp L       &mt DQT SEMI    &mt BACKSLASH ENTER
-&kp LSHIFT     &kp Z     &kp X     &kp C         &kp V        &kp B        &mt LBKT LPAR  &mt RBKT RPAR  &kp N        &kp M  &kp COMMA  &kp PERIOD  &kp SLASH       &kp UP
-&kp LCTRL      &kp LGUI  &kp LGUI  &kp LEFT_ALT  &lt 3 SPACE  &lt 3 SPACE  &lt 1 SPACE    &to 1          &lt 3 SPACE  &none  &none      &kp LEFT    &kp DOWN_ARROW  &kp RIGHT
+&none          &none     &none     &none         &none        &none                                      &none        &none  &none                &none                    &none         &none
+&mt GRAVE ESC  &kp Q     &kp W     &kp E         &kp R        &kp T                                      &kp Y        &kp U  &kp I                &kp O                    &kp P         &kp BSPC
+&kp TAB        &kp A     &kp S     &kp D         &kp F        &kp G        &none          &none          &kp H        &kp J  &kp K                &kp L                    &mt DQT SEMI  &mt BACKSLASH ENTER
+&kp LSHIFT     &kp Z     &kp X     &kp C         &kp V        &kp B        &mt LBKT LPAR  &mt RBKT RPAR  &kp N        &kp M  &mt LESS_THAN COMMA  &mt GREATER_THAN PERIOD  &kp SLASH     &kp UP
+&kp LCTRL      &kp LGUI  &kp LGUI  &kp LEFT_ALT  &lt 3 SPACE  &lt 3 SPACE  &lt 1 SPACE    &to 1          &lt 3 SPACE  &none  &none                &kp LEFT                 &kp RIGHT     &kp DOWN
             >;
         };
 
