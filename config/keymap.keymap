@@ -5,15 +5,7 @@
 &mt { flavor = "tap-preferred"; };
 
 / {
-    combos {
-        compatible = "zmk,combos";
-
-        scrool1 {
-            bindings = <&mo 2>;
-            key-positions = <35 35 34>;
-            layers = <0 1>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     keymap {
         compatible = "zmk,keymap";
