@@ -39,5 +39,15 @@
 &none   &none            &none        &none         &none       &none        &none   &none   &none      &none          &none         &none            &trans          &none
             >;
         };
+
+        layer_3 {
+            bindings = <
+&none   &none   &none   &none   &none   &none                      &none     &none     &none   &none      &none   &none
+&trans  &trans  &trans  &trans  &trans  &trans                     &trans    &trans    &trans  &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &none   &none      &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans    &trans    &trans  &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp ENTER  &trans    &none     &none   &trans     &trans  &trans
+            >;
+        };
     };
 };
