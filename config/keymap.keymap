@@ -22,11 +22,11 @@
 
         track {
             bindings = <
-&none   &none   &none   &none   &none      &none                        &none             &none      &none     &none      &none            &none
-&trans  &trans  &trans  &trans  &trans     &trans                       &none             &none      &none     &none      &none            &kp DELETE
-&trans  &trans  &trans  &trans  &trans     &trans     &none      &none  &mkp MB4          &mkp LCLK  &mkp MB3  &mkp RCLK  &msc MOVE_Y(20)  &kp ENTER
-&trans  &trans  &trans  &trans  &trans     &trans     &trans     &none  &mkp MB5          &none      &none     &none      &none            &trans
-&trans  &trans  &trans  &trans  &kp SPACE  &kp SPACE  &kp SPACE  &to 0  &msc MOVE_Y(-20)  &none      &none     &trans     &trans           &trans
+&none   &none   &none   &none   &none      &none                     &none             &none      &none     &none      &none            &none
+&trans  &trans  &trans  &trans  &trans     &trans                    &none             &none      &none     &none      &none            &kp DELETE
+&trans  &trans  &trans  &trans  &trans     &trans     &none   &none  &mkp MB4          &mkp LCLK  &mkp MB3  &mkp RCLK  &msc MOVE_Y(20)  &kp ENTER
+&trans  &trans  &trans  &trans  &trans     &trans     &trans  &none  &mkp MB5          &none      &none     &none      &none            &trans
+&trans  &trans  &trans  &trans  &kp SPACE  &kp SPACE  &to 0   &to 0  &msc MOVE_Y(-20)  &none      &none     &trans     &trans           &trans
             >;
         };
 
