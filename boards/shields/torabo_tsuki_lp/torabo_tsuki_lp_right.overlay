@@ -3,7 +3,7 @@ j7#include "torabo_tsuki_lp.dtsi"
 #include <dt-bindings/zmk/input_transform.h>
 
 &trackball_listener {
-    input-processors = <&zip_temp_layer 1 100007>;
+    input-processors = <&zip_temp_layer 1 10000>;
     tracker {
         layers = <1>;
         input-processors =
