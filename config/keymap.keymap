@@ -3,8 +3,8 @@
 #include <dt-bindings/zmk/pointing.h>
 
 &mt { flavor = "tap-preferred"; };
-&mkp_input_listener { input-processors = <&zip_temp_layer 1 250>; };
-&msc_input_listener { input-processors = <&zip_temp_layer 1 250>; };
+&mkp_input_listener { input-processors = <&zip_temp_layer 1 1000>; };
+&msc_input_listener { input-processors = <&zip_temp_layer 1 1000>; };
 
 / {
     combos { compatible = "zmk,combos"; };
