@@ -1,4 +1,4 @@
-j7#include "torabo_tsuki_lp.dtsi"
+#include "torabo_tsuki_lp.dtsi"
 #include <input/processors.dtsi>
 #include <dt-bindings/zmk/input_transform.h>
 
