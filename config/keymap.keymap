@@ -7,7 +7,19 @@
 &mkp_input_listener { input-processors = <&zip_temp_layer 1 1000>; };
 
 / {
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        downmsc {
+            bindings = <&msc MOVE_Y(-20)>;
+            key-positions = <60 33>;
+        };
+
+        upmsc {
+            bindings = <&msc MOVE_Y(20)>;
+            key-positions = <60 35>;
+        };
+    };
 
     keymap {
         compatible = "zmk,keymap";
