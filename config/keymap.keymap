@@ -12,12 +12,12 @@
 
         downmsc {
             bindings = <&msc MOVE_Y(-20)>;
-            key-positions = <46 20>;
+            key-positions = <20 19>;
         };
 
         upmsc {
             bindings = <&msc MOVE_Y(20)>;
-            key-positions = <20 22>;
+            key-positions = <21 20>;
         };
     };
 
