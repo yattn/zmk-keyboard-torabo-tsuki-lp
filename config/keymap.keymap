@@ -4,7 +4,7 @@
 
 &mt { flavor = "tap-preferred"; };
 
-&mkp_input_listener { input-processors = <&zip_temp_layer 1 1000>; };
+&mkp_input_listener { input-processors = <&zip_temp_layer 1 250>; };
 
 / {
     combos {
