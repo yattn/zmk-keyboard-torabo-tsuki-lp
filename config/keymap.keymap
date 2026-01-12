@@ -13,11 +13,13 @@
         downmsc {
             bindings = <&msc MOVE_Y(-20)>;
             key-positions = <33 34>;
+            layers = <0>;
         };
 
         upmsc {
             bindings = <&msc MOVE_Y(20)>;
             key-positions = <35 34>;
+            layers = <0>;
         };
     };
 
