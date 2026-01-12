@@ -17,7 +17,7 @@
 
         upmsc {
             bindings = <&msc MOVE_Y(20)>;
-            key-positions = <60 35 34>;
+            key-positions = <35 34>;
         };
     };
 
