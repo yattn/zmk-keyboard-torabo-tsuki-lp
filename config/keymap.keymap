@@ -19,16 +19,6 @@
             bindings = <&msc MOVE_Y(20)>;
             key-positions = <35 34>;
         };
-
-        test {
-            bindings = <&msc MOVE_Y(20)>;
-            key-positions = <52 38>;
-        };
-
-        test2 {
-            bindings = <&msc MOVE_Y(20)>;
-            key-positions = <47 49>;
-        };
     };
 
     keymap {
