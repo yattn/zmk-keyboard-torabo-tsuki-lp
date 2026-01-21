@@ -1,7 +1,0 @@
-config ZMK_INPUT_PROCESSOR_TEMP_LAYER_THRESHOLD
-    bool "Enable threshold-based temporary layer input processor"
-    default y
-    depends on ZMK_KEYMAP
-    help
-      Enable input processor that activates a temporary layer only when
-      the accumulated mouse movement exceeds a configurable threshold.
