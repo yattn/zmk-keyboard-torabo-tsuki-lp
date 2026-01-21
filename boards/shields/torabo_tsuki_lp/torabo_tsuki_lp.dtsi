@@ -127,6 +127,7 @@
 
 &zip_temp_layer {
     excluded-positions = < 19 20 21 >;
+    require-prior-idle-ms = <100>;  // キー操作後100ms以内のトラックボール動作を無視
 };
 
 &pinctrl {

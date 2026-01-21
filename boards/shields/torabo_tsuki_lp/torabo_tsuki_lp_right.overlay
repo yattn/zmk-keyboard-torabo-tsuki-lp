@@ -1,16 +1,9 @@
 #include "torabo_tsuki_lp.dtsi"
 #include <input/processors.dtsi>
-#include <input/processors_threshold.dtsi>
 #include <dt-bindings/zmk/input_transform.h>
 
-&zip_temp_layer_threshold {
-    threshold = <8>;              // 8ピクセル以上の動きでレイヤー切り替え
-    threshold-time-ms = <150>;    // 150ms以内の累積動きをカウント
-    excluded-positions = <19 20 21>;  // マウスボタンのキー位置を除外
-};
-
 &trackball_listener {
-    input-processors = <&zip_temp_layer_threshold 1 10000>;
+    input-processors = <&zip_temp_layer 1 10000>;
     tracker {
         layers = <1>;
         input-processors =

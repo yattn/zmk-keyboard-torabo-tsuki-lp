@@ -1,1 +1,0 @@
-target_sources(app PRIVATE src/input_processor_temp_layer_threshold.c)
