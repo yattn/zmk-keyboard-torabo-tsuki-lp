@@ -1,22 +1,17 @@
+# Copyright (c) 2024 ZMK Contributors
+# SPDX-License-Identifier: MIT
+
 description: |
   Threshold-based temporary layer input processor for ZMK.
   Activates a layer only when accumulated mouse movement exceeds the threshold.
 
-  Parameters:
-    param1: Layer number to activate
-    param2: Timeout in milliseconds
-
 compatible: "zmk,input-processor-temp-layer-threshold"
-
-include: base.yaml
 
 properties:
   "#input-processor-cells":
     type: int
     required: true
     const: 2
-    description: |
-      Number of cells required: layer number and timeout (ms).
 
   threshold:
     type: int
@@ -24,24 +19,26 @@ properties:
     description: |
       Movement threshold in pixels. The layer will only activate
       when the cumulative absolute movement exceeds this value.
-      Higher values require more movement before layer activation.
 
   threshold-time-ms:
     type: int
     default: 100
     description: |
       Time window in milliseconds for accumulating movement.
-      Movement is accumulated within this window to check against threshold.
 
   require-prior-idle-ms:
     type: int
     default: 0
     description: |
-      If set to a non-zero value, the layer will only activate if
-      there have been no key presses for at least this many milliseconds.
+      Time in milliseconds that must pass after the last keystroke
+      before the layer can be toggled.
 
   excluded-positions:
     type: array
     default: []
     description: |
-      Key positions that will not deactivate the temporary layer when pressed.
+      Array of key positions that will NOT trigger layer deactivation.
+
+input-processor-cells:
+  - param1
+  - param2
