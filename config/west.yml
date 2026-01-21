@@ -25,5 +25,7 @@ manifest:
     - name: zmk-feature-non-lipo-battery-management
       remote: sekigon-gonnoc
       revision: main
+    - name: zmk-input-processor-temp-layer-threshold
+      path: modules/zmk-input-processor-temp-layer-threshold
   self:
     path: config

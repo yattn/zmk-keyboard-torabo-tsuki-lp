@@ -1,0 +1,8 @@
+/ {
+    zip_temp_layer_threshold: zip_temp_layer_threshold {
+        compatible = "zmk,input-processor-temp-layer-threshold";
+        #input-processor-cells = <2>;
+        threshold = <5>;
+        threshold-time-ms = <100>;
+    };
+};
