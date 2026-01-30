@@ -127,6 +127,7 @@
 
 &zip_temp_layer {
     excluded-positions = < 19 20 21 22 47 >;
+    require-prior-idle-ms = <200>;
 };
 
 &pinctrl {
