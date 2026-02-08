@@ -5,7 +5,30 @@
 &mt { flavor = "tap-preferred"; };
 
 / {
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        up {
+            bindings = <&kp UP>;
+            key-positions = <3 8>;
+            timeout-ms = <0>;
+        };
+
+        left {
+            bindings = <&kp LEFT>;
+            key-positions = <14 19>;
+        };
+
+        right {
+            bindings = <&kp RIGHT>;
+            key-positions = <16 21>;
+        };
+
+        down {
+            bindings = <&kp DOWN>;
+            key-positions = <15 20>;
+        };
+    };
 
     keymap {
         compatible = "zmk,keymap";
