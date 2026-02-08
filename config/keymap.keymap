@@ -12,21 +12,25 @@
             bindings = <&kp UP>;
             key-positions = <3 8>;
             timeout-ms = <0>;
+            slow-release;
         };
 
         left {
             bindings = <&kp LEFT>;
             key-positions = <14 19>;
+            slow-release;
         };
 
         right {
             bindings = <&kp RIGHT>;
             key-positions = <16 21>;
+            slow-release;
         };
 
         down {
             bindings = <&kp DOWN>;
             key-positions = <15 20>;
+            slow-release;
         };
     };
 
