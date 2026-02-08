@@ -32,6 +32,18 @@
             key-positions = <15 20>;
             slow-release;
         };
+
+        left2 {
+            bindings = <&kp LEFT>;
+            key-positions = <18 14>;
+            slow-release;
+        };
+
+        right2 {
+            bindings = <&kp RIGHT>;
+            key-positions = <17 21>;
+            slow-release;
+        };
     };
 
     keymap {
