@@ -60,6 +60,11 @@
             bindings = <&kp DEL>;
             key-positions = <10 11>;
         };
+
+        sqt {
+            bindings = <&kp SQT>;
+            key-positions = <23 22>;
+        };
     };
 
     macros {
