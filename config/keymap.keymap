@@ -103,12 +103,12 @@
 
         lt {
             bindings = <&kp LESS_THAN>;
-            key-positions = <27 28>;
+            key-positions = <28 29>;
         };
 
         gt {
             bindings = <&kp GREATER_THAN>;
-            key-positions = <34 33>;
+            key-positions = <33 32>;
         };
     };
 
