@@ -32,6 +32,16 @@
             bindings = <&kp PERCENT>;
             key-positions = <4 5>;
         };
+
+        caret {
+            bindings = <&kp CARET>;
+            key-positions = <6 5>;
+        };
+
+        amps {
+            bindings = <&kp AMPERSAND>;
+            key-positions = <6 7>;
+        };
     };
 
     macros {
