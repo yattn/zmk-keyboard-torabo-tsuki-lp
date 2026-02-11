@@ -113,11 +113,11 @@
     };
 
     macros {
-        lclkto0: new_macro {
+        lclkto0: lclkto0 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&mkp MB1 &to 0>;
-            label = "NEW_MACRO";
+            label = "LCLKTO0";
         };
 
         rclkto0: rclkto0 {
