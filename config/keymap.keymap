@@ -40,7 +40,7 @@
             >;
         };
 
-        layer_3 {
+        arrow {
             bindings = <
 &none  &none  &none  &none  &none  &none                &none     &none     &none   &none      &none  &none
 &none  &none  &none  &none  &none  &none                &none     &none     &none   &none      &none  &none
