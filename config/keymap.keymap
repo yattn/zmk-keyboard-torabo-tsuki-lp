@@ -70,6 +70,16 @@
             bindings = <&kp BSLH>;
             key-positions = <23 22>;
         };
+
+        lpar {
+            bindings = <&kp LEFT_PARENTHESIS>;
+            key-positions = <15 14>;
+        };
+
+        rpar {
+            bindings = <&kp RIGHT_PARENTHESIS>;
+            key-positions = <15 16>;
+        };
     };
 
     macros {
