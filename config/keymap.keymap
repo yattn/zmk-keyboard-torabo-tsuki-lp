@@ -80,6 +80,16 @@
             bindings = <&kp RIGHT_PARENTHESIS>;
             key-positions = <15 16>;
         };
+
+        lbkt {
+            bindings = <&kp LEFT_BRACKET>;
+            key-positions = <26 27>;
+        };
+
+        rbkt {
+            bindings = <&kp RIGHT_BRACKET>;
+            key-positions = <27 28>;
+        };
     };
 
     macros {
