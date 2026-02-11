@@ -63,6 +63,11 @@
 
         sqt {
             bindings = <&kp SQT>;
+            key-positions = <22 21>;
+        };
+
+        bslh {
+            bindings = <&kp BSLH>;
             key-positions = <23 22>;
         };
     };
