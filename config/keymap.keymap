@@ -130,7 +130,8 @@
         imesc: imesc {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp ESC &kp LANG1>;
+            bindings = <&kp ESC &kp LANG1>, <&macro_release>;
+
             label = "IMESC";
         };
     };
