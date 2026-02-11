@@ -124,7 +124,7 @@
 &none              &none     &none         &none  &none     &none                                &none      &none  &none      &none       &none                  &none
 &mt_imesc GRAVE 0  &kp Q     &kp W         &kp E  &kp R     &kp T                                &kp Y      &kp U  &kp I      &kp O       &kp P                  &kp BACKSPACE
 &kp TAB            &kp A     &kp S         &kp D  &kp F     &kp G        &none          &none    &kp H      &kp J  &kp K      &kp L       &mt SINGLE_QUOTE SEMI  &kp ENTER
-&kp LSHIFT         &kp Z     &kp X         &kp C  &kp V     &kp B        &to 1          &to 1    &kp N      &kp M  &kp COMMA  &kp PERIOD  &kp SLASH              &kp DEL
+&kp LSHIFT         &kp Z     &kp X         &kp C  &kp V     &kp B        &to 1          &to 1    &kp N      &kp M  &kp COMMA  &kp PERIOD  &kp SLASH              &kp UP
 &kp LCTRL          &kp LGUI  &kp LEFT_ALT  &mo 0  &lt 3 UP  &lt 2 SPACE  &lt_imesc 0 0  &kp TAB  &kp SPACE  &none  &none      &kp LEFT    &kp DOWN               &kp RIGHT
             >;
         };
