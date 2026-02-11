@@ -78,6 +78,13 @@
             bindings = <&mkp MB2 &to 0>;
             label = "RCLKTO0";
         };
+
+        imesc: imesc {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp ESC &kp LANG1>;
+            label = "IMESC";
+        };
     };
 
     keymap {
