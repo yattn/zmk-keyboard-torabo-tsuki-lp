@@ -2,8 +2,6 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 
-&mt { flavor = "tap-preferred"; };
-
 / {
     combos {
         compatible = "zmk,combos";
@@ -91,6 +89,15 @@
         mt_imesc: mt_imesc {
             compatible = "zmk,behavior-hold-tap";
             label = "MT_IMESC";
+            bindings = <&mt>, <&imesc>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+        };
+
+        lt_imesc: lt_imesc {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LT_IMESC";
             bindings = <&lt>, <&imesc>;
 
             #binding-cells = <2>;
