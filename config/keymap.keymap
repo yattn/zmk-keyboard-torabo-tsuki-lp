@@ -87,6 +87,17 @@
         };
     };
 
+    behaviors {
+        mt_imesc: mt_imesc {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MT_IMESC";
+            bindings = <&lt>, <&imesc>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
