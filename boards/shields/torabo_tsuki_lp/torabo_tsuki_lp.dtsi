@@ -161,3 +161,7 @@
         power-gpios = <&gpio0 8 (GPIO_ACTIVE_HIGH | NRF_GPIO_DRIVE_H1)>;
     };
 };
+
+&zip_temp_layer {
+    require-prior-idle-ms = <2000>;
+};
