@@ -163,11 +163,11 @@
 
         main {
             bindings = <
-&none          &none     &none         &none  &none   &none                               &none      &none  &none      &none       &none          &none
-&mt GRAVE ESC  &kp Q     &kp W         &kp E  &kp R   &kp T                               &kp Y      &kp U  &kp I      &kp O       &kp P          &kp BACKSPACE
-&kp TAB        &kp A     &kp S         &kp D  &kp F   &kp G        &none         &none    &kp H      &kp J  &kp K      &kp L       &kp SEMICOLON  &kp ENTER
-&kp LSHIFT     &kp Z     &kp X         &kp C  &kp V   &kp B        &kp HOME      &kp END  &kp N      &kp M  &kp COMMA  &kp PERIOD  &kp SLASH      &kp UP
-&kp LCTRL      &kp LGUI  &kp LEFT_ALT  &mo 3  &imesc  &lt 2 SPACE  &mt LGUI ESC  &kp TAB  &kp SPACE  &none  &none      &kp LEFT    &kp DOWN       &kp RIGHT
+&none       &none     &none         &none  &none   &none                               &none      &none  &none      &none       &none          &none
+&imesc      &kp Q     &kp W         &kp E  &kp R   &kp T                               &kp Y      &kp U  &kp I      &kp O       &kp P          &kp BACKSPACE
+&kp TAB     &kp A     &kp S         &kp D  &kp F   &kp G        &none         &none    &kp H      &kp J  &kp K      &kp L       &kp SEMICOLON  &kp ENTER
+&kp LSHIFT  &kp Z     &kp X         &kp C  &kp V   &kp B        &kp HOME      &kp END  &kp N      &kp M  &kp COMMA  &kp PERIOD  &kp SLASH      &kp UP
+&kp LCTRL   &kp LGUI  &kp LEFT_ALT  &mo 3  &imesc  &lt 2 SPACE  &mt LGUI ESC  &kp TAB  &kp SPACE  &none  &none      &kp LEFT    &kp DOWN       &kp RIGHT
             >;
         };
 
