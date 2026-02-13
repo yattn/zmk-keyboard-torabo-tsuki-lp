@@ -165,3 +165,7 @@
 &zip_temp_layer {
     require-prior-idle-ms = <2000>;
 };
+
+&mkp_input_listener {
+    input-processors = <&zip_temp_layer 0 250>;
+};
