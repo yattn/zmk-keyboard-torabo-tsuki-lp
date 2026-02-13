@@ -2,6 +2,8 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 
+&mkp_input_listener { input-processors = <&zip_temp_layer 0 250>; };
+
 / {
     combos {
         compatible = "zmk,combos";
@@ -156,11 +158,6 @@
             tapping-term-ms = <100>;
             flavor = "tap-preferred";
         };
-    };
-
-
-    &mkp_input_listener {
-        input-processors = <&zip_temp_layer 0 250>;
     };
 
     keymap {
