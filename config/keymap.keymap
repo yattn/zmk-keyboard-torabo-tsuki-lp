@@ -2,7 +2,8 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 
-&mkp_input_listener { input-processors = <&zip_temp_layer 0 250>; };
+&mkp_input_listener { input-processors = <&zip_temp_layer 1 250>; };
+&msc_input_listener { input-processors = <&zip_temp_layer 1 0>; };
 
 / {
     combos {
