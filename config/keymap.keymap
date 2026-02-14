@@ -193,7 +193,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans                  &kp LC(C)  &trans    &trans  &trans     &kp LC(V)  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT   &kp DOWN  &kp UP  &kp RIGHT  &trans     &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans    &trans  &trans     &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans    &trans  &trans     &trans     &trans
+&trans  &trans  &trans  &none   &trans  &trans  &trans  &trans  &trans     &trans    &trans  &trans     &trans     &trans
             >;
         };
     };
