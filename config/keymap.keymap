@@ -159,7 +159,11 @@
             #binding-cells = <0>;
             wait-ms = <30>;
             tap-ms = <30>;
-            bindings = <&kp ESC>, <&macro_wait_time 30>, <&kp LANG1>;
+            bindings =
+                <&kp ESC>,
+                <&macro_wait_time 30>,
+                <&kp LANG1>,
+                <&macro_release>;
 
             label = "IMESC";
         };
