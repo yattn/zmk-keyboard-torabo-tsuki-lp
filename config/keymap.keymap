@@ -207,6 +207,15 @@
             #binding-cells = <0>;
             bindings = <&kp F6>, <&kp F7>, <&kp F8>;
         };
+
+        new_behavior: new_behavior {
+            compatible = "zmk,behavior-hold-tap";
+            label = "NEW_BEHAVIOR";
+            bindings = <&msc>, <&msc>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <100>;
+        };
     };
 
     keymap {
@@ -224,11 +233,11 @@
 
         track {
             bindings = <
-&trans  &trans  &trans     &trans     &trans  &trans                                           &trans                          &trans     &trans    &trans     &trans     &trans
-&trans  &trans  &trans     &trans     &trans  &trans                                           &kp LC(C)                       &kp PG_UP  &trans    &trans     &kp LC(V)  &trans
-&trans  &trans  &trans     &kp PG_DN  &trans  &vimgg     &trans  &trans                        &mkp MB4                        &mkp LCLK  &mkp MB3  &mkp RCLK  &trans     &trans
-&trans  &trans  &kp LC(X)  &trans     &trans  &trans     &trans  &trans                        &mkp MB5                        &trans     &trans    &trans     &trans     &trans
-&trans  &trans  &trans     &trans     &trans  &kp SPACE  &trans  &mt_msc MOVE_Y(20) MOVE_Y(5)  &mt_msc MOVE_Y(-20) MOVE_Y(-5)  &trans     &trans    &trans     &trans     &trans
+&trans  &trans  &trans     &trans     &trans  &trans                                            &trans                           &trans     &trans    &trans     &trans     &trans
+&trans  &trans  &trans     &trans     &trans  &trans                                            &kp LC(C)                        &kp PG_UP  &trans    &trans     &kp LC(V)  &trans
+&trans  &trans  &trans     &kp PG_DN  &trans  &vimgg     &trans  &trans                         &mkp MB4                         &mkp LCLK  &mkp MB3  &mkp RCLK  &trans     &trans
+&trans  &trans  &kp LC(X)  &trans     &trans  &trans     &trans  &trans                         &mkp MB5                         &trans     &trans    &trans     &trans     &trans
+&trans  &trans  &trans     &trans     &trans  &kp SPACE  &trans  &mt_msc MOVE_Y(20) MOVE_Y(10)  &mt_msc MOVE_Y(-20) MOVE_Y(-10)  &trans     &trans    &trans     &trans     &trans
             >;
         };
 
