@@ -113,20 +113,6 @@
     };
 
     macros {
-        lclkto0: lclkto0 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&mkp MB1 &to 0>;
-            label = "LCLKTO0";
-        };
-
-        rclkto0: rclkto0 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&mkp MB2 &to 0>;
-            label = "RCLKTO0";
-        };
-
         imesc: imesc {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -157,6 +143,15 @@
             tapping-term-ms = <100>;
             flavor = "tap-preferred";
         };
+
+        mt_msc: mt_msc {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MT_MSC";
+            bindings = <&msc>, <&msc>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+        };
     };
 
     keymap {
@@ -174,11 +169,11 @@
 
         track {
             bindings = <
-&none  &none  &none  &none  &none  &none                    &none             &none      &none     &none      &none            &none
-&none  &none  &none  &none  &none  &none                    &kp LC(C)         &none      &rclkto0  &none      &kp LC(V)        &none
-&none  &none  &none  &none  &none  &none      &none  &none  &mkp MB4          &mkp LCLK  &mkp MB3  &mkp RCLK  &msc MOVE_Y(20)  &none
-&none  &none  &none  &none  &none  &none      &none  &none  &mkp MB5          &none      &none     &none      &none            &none
-&none  &none  &none  &none  &none  &kp SPACE  &none  &none  &msc MOVE_Y(-20)  &none      &none     &none      &none            &none
+&trans  &trans  &trans  &trans  &trans  &trans                                           &trans                          &trans     &trans    &trans     &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                           &kp LC(C)                       &trans     &trans    &trans     &kp LC(V)  &trans
+&trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans                        &mkp MB4                        &mkp LCLK  &mkp MB3  &mkp RCLK  &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans                        &mkp MB5                        &trans     &trans    &trans     &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &kp SPACE  &trans  &mt_msc MOVE_Y(20) MOVE_Y(5)  &mt_msc MOVE_Y(-20) MOVE_Y(-5)  &trans     &trans    &trans     &trans     &trans
             >;
         };
 
