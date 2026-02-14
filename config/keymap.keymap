@@ -166,25 +166,6 @@
     };
 
     behaviors {
-        mt_imesc: mt_imesc {
-            compatible = "zmk,behavior-hold-tap";
-            label = "MT_IMESC";
-            bindings = <&mt>, <&imesc>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-        };
-
-        lt_imesc: lt_imesc {
-            compatible = "zmk,behavior-hold-tap";
-            label = "LT_IMESC";
-            bindings = <&lt>, <&imesc>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <100>;
-            flavor = "tap-preferred";
-        };
-
         vimgg: vimgg {
             compatible = "zmk,behavior-tap-dance";
             label = "VIMGG";
@@ -205,11 +186,11 @@
 
         main {
             bindings = <
-&none       &none     &none         &none  &none              &none                                 &none      &none  &none      &none       &none          &none
-&imesc      &kp Q     &kp W         &kp E  &kp R              &kp T                                 &kp Y      &kp U  &kp I      &kp O       &kp P          &kp BACKSPACE
-&kp TAB     &kp A     &kp S         &kp D  &kp F              &kp G        &none           &none    &kp H      &kp J  &kp K      &kp L       &kp SEMICOLON  &kp ENTER
-&kp LSHIFT  &kp Z     &kp X         &kp C  &kp V              &kp B        &kp HOME        &kp END  &kp N      &kp M  &kp COMMA  &kp PERIOD  &kp SLASH      &kp DEL
-&kp LCTRL   &kp LGUI  &kp LEFT_ALT  &mo 3  &mt_imesc LCTRL 0  &lt 2 SPACE  &mt LGUI SPACE  &kp TAB  &kp SPACE  &none  &none      &kp LEFT    &kp RIGHT      &mo 1
+&none       &none     &none         &none  &none   &none                                 &none      &none  &none      &none       &none          &none
+&imesc      &kp Q     &kp W         &kp E  &kp R   &kp T                                 &kp Y      &kp U  &kp I      &kp O       &kp P          &kp BACKSPACE
+&kp TAB     &kp A     &kp S         &kp D  &kp F   &kp G        &none           &none    &kp H      &kp J  &kp K      &kp L       &kp SEMICOLON  &kp ENTER
+&kp LSHIFT  &kp Z     &kp X         &kp C  &kp V   &kp B        &kp HOME        &kp END  &kp N      &kp M  &kp COMMA  &kp PERIOD  &kp SLASH      &kp DEL
+&kp LCTRL   &kp LGUI  &kp LEFT_ALT  &mo 3  &imesc  &lt 2 SPACE  &mt LGUI SPACE  &kp TAB  &kp SPACE  &none  &none      &kp LEFT    &kp RIGHT      &mo 1
             >;
         };
 
