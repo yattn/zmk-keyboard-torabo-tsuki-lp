@@ -116,6 +116,41 @@
             key-positions = <24 17>;
             layers = <3 1>;
         };
+
+        minus2 {
+            bindings = <&kp MINUS>;
+            key-positions = <18 17>;
+        };
+
+        plus {
+            bindings = <&kp PLUS>;
+            key-positions = <29 32>;
+        };
+
+        under {
+            bindings = <&kp UNDERSCORE>;
+            key-positions = <16 19>;
+        };
+
+        ctrlspc {
+            bindings = <&kp LC(SPACE)>;
+            key-positions = <43 46>;
+        };
+
+        bksl {
+            bindings = <&kp BACKSLASH>;
+            key-positions = <50 51>;
+        };
+
+        pipe {
+            bindings = <&kp PIPE>;
+            key-positions = <28 33>;
+        };
+
+        amps2 {
+            bindings = <&kp AMPERSAND>;
+            key-positions = <4 7>;
+        };
     };
 
     macros {
