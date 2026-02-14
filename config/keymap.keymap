@@ -214,7 +214,8 @@
             bindings = <&msc>, <&msc>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <100>;
+            tapping-term-ms = <50>;
+            flavor = "tap-unless-interrupted";
         };
     };
 
