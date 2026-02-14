@@ -191,7 +191,8 @@
             bindings = <&msc>, <&msc>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <100>;
+            flavor = "tap-unless-interrupted";
         };
 
         vimgg: vimgg {
@@ -206,16 +207,6 @@
             label = "F6F7F8";
             #binding-cells = <0>;
             bindings = <&kp F6>, <&kp F7>, <&kp F8>;
-        };
-
-        new_behavior: new_behavior {
-            compatible = "zmk,behavior-hold-tap";
-            label = "NEW_BEHAVIOR";
-            bindings = <&msc>, <&msc>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <50>;
-            flavor = "tap-unless-interrupted";
         };
     };
 
