@@ -165,6 +165,13 @@
             #binding-cells = <0>;
             bindings = <&kp G>, <&kp HOME>;
         };
+
+        f6f7f8: f6f7f8 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "F6F7F8";
+            #binding-cells = <0>;
+            bindings = <&kp F6>, <&kp F7>, <&kp F8>;
+        };
     };
 
     keymap {
@@ -176,7 +183,7 @@
 &imesc      &kp Q     &kp W         &kp E  &kp R   &kp T                                 &kp Y      &kp U  &kp I      &kp O       &kp P          &kp BACKSPACE
 &kp TAB     &kp A     &kp S         &kp D  &kp F   &kp G        &none           &none    &kp H      &kp J  &kp K      &kp L       &kp SEMICOLON  &kp ENTER
 &kp LSHIFT  &kp Z     &kp X         &kp C  &kp V   &kp B        &kp HOME        &kp END  &kp N      &kp M  &kp COMMA  &kp PERIOD  &kp SLASH      &kp UP
-&kp LCTRL   &kp LGUI  &kp LEFT_ALT  &mo 3  &imesc  &lt 2 SPACE  &mt LGUI SPACE  &kp TAB  &kp SPACE  &none  &none      &kp LEFT    &kp DOWN       &mo 1
+&kp LCTRL   &kp LGUI  &kp LEFT_ALT  &mo 3  &imesc  &lt 2 SPACE  &mt LGUI SPACE  &kp TAB  &kp SPACE  &none  &none      &kp UP      &kp DOWN       &mo 1
             >;
         };
 
@@ -192,11 +199,11 @@
 
         sub {
             bindings = <
-&none          &none            &none        &none      &none       &none                            &none      &none          &none      &none      &none      &none
-&kp GRAVE      &kp EXCLAMATION  &kp AT_SIGN  &kp POUND  &kp DOLLAR  &kp PERCENT                      &kp CARET  &kp AMPERSAND  &kp ASTRK  &kp MINUS  &kp EQUAL  &none
-&kp LC(TAB)    &kp N1           &kp N2       &kp N3     &kp N4      &kp N5       &none  &none        &kp N6     &kp N7         &kp N8     &kp N9     &kp N0     &mt PIPE BSLH
-&trans         &kp LC(Z)        &kp LC(X)    &kp LC(C)  &kp LC(V)   &none        &none  &none        &none      &none          &kp LT     &kp GT     &kp QMARK  &none
-&kp LC(SPACE)  &none            &none        &none      &none       &none        &none  &kp LC(TAB)  &none      &none          &none      &none      &none      &none
+&none          &none            &none        &none      &none       &none                            &none           &none          &none      &none      &none      &none
+&kp GRAVE      &kp EXCLAMATION  &kp AT_SIGN  &kp POUND  &kp DOLLAR  &kp PERCENT                      &kp CARET       &kp AMPERSAND  &kp ASTRK  &kp MINUS  &kp EQUAL  &none
+&kp LC(TAB)    &kp N1           &kp N2       &kp N3     &kp N4      &kp N5       &none  &none        &kp N6          &kp N7         &kp N8     &kp N9     &kp N0     &mt PIPE BSLH
+&trans         &kp LC(Z)        &kp LC(X)    &kp LC(C)  &kp LC(V)   &none        &none  &none        &kp INT_HENKAN  &f6f7f8        &kp LT     &kp GT     &kp QMARK  &none
+&kp LC(SPACE)  &none            &none        &none      &none       &none        &none  &kp LC(TAB)  &none           &none          &none      &none      &none      &none
             >;
         };
 
