@@ -206,11 +206,11 @@
 
         sub {
             bindings = <
-&trans         &trans           &trans       &trans     &trans      &trans                            &trans     &trans         &trans     &trans     &trans     &trans
-&kp GRAVE      &kp EXCLAMATION  &kp AT_SIGN  &kp POUND  &kp DOLLAR  &kp PERCENT                       &kp CARET  &kp AMPERSAND  &kp ASTRK  &kp MINUS  &kp EQUAL  &trans
-&kp LC(TAB)    &kp N1           &kp N2       &kp N3     &kp N4      &kp N5       &trans  &trans       &kp N6     &kp N7         &kp N8     &kp N9     &kp N0     &mt PIPE BSLH
-&trans         &kp LC(Z)        &kp LC(X)    &kp LC(C)  &kp LC(V)   &trans       &trans  &trans       &trans     &trans         &kp LT     &kp GT     &kp QMARK  &trans
-&kp LC(SPACE)  &trans           &trans       &trans     &trans      &trans       &trans  &kp LC(TAB)  &trans     &trans         &trans     &trans     &trans     &trans
+&trans         &trans           &trans       &trans     &trans      &trans                            &trans     &trans         &trans     &trans      &trans     &trans
+&kp GRAVE      &kp EXCLAMATION  &kp AT_SIGN  &kp POUND  &kp DOLLAR  &kp PERCENT                       &kp CARET  &kp AMPERSAND  &kp ASTRK  &kp MINUS   &kp EQUAL  &trans
+&kp LC(TAB)    &kp N1           &kp N2       &kp N3     &kp N4      &kp N5       &trans  &trans       &kp N6     &kp N7         &kp N8     &kp N9      &kp N0     &mt PIPE BSLH
+&trans         &kp LC(Z)        &kp LC(X)    &kp LC(C)  &kp LC(V)   &trans       &trans  &trans       &trans     &trans         &kp COMMA  &kp PERIOD  &kp QMARK  &trans
+&kp LC(SPACE)  &trans           &trans       &trans     &trans      &trans       &trans  &kp LC(TAB)  &trans     &trans         &trans     &trans      &trans     &trans
             >;
         };
 
