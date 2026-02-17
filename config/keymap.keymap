@@ -159,7 +159,7 @@
             #binding-cells = <0>;
             wait-ms = <30>;
             tap-ms = <30>;
-            bindings = <&kp ESC &kp LANG1>;
+            bindings = <&kp LANG1 &kp ESC>;
             label = "IMESC";
         };
     };
