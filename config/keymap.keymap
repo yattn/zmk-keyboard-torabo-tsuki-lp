@@ -379,11 +379,11 @@
 
         layer_0 {
             bindings = <
-&none           &none          &none           &none     &none           &none                                     &none      &none  &none      &none     &none      &none
-&imesc          &kp Q          &kp W           &kp E     &kp R           &kp T                                     &kp Y      &kp U  &kp I      &kp O     &kp P      &kp BSPC
-&kp HOME        &kp A          &kp S           &kp D     &kp F           &kp G        &none           &none        &kp H      &kp J  &kp K      &kp L     &kp SEMI   &kp ENTER
-&mt LSHIFT END  &kp Z          &kp X           &kp C     &kp V           &kp B        &kp PG_UP       &kp PG_DN    &kp N      &kp M  &kp COMMA  &kp DOT   &kp FSLH   &kp F20
-&kp LCTRL       &mt LGUI LEFT  &mt LALT RIGHT  &kp HOME  &mt LSHIFT END  &lt 2 SPACE  &mt LGUI SPACE  &tabsdelete  &tabspace  &none  &none      &kp LEFT  &kp RIGHT  &mo 1
+&none           &none           &none           &none     &none           &none                                     &none      &none  &none      &none     &none      &none
+&imesc          &kp Q           &kp W           &kp E     &kp R           &kp T                                     &kp Y      &kp U  &kp I      &kp O     &kp P      &kp BSPC
+&kp HOME        &kp A           &kp S           &kp D     &kp F           &kp G        &none           &none        &kp H      &kp J  &kp K      &kp L     &kp SEMI   &kp ENTER
+&mt LSHIFT END  &kp Z           &kp X           &kp C     &kp V           &kp B        &kp PG_UP       &kp PG_DN    &kp N      &kp M  &kp COMMA  &kp DOT   &kp FSLH   &kp F20
+&kp LCTRL       &mt LGUI PG_UP  &mt LALT PG_DN  &kp HOME  &mt LSHIFT END  &lt 2 SPACE  &mt LGUI SPACE  &tabsdelete  &tabspace  &none  &none      &kp LEFT  &kp RIGHT  &mo 1
             >;
         };
 
