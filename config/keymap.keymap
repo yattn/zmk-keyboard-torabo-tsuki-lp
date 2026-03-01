@@ -399,11 +399,11 @@
 
         layer_2 {
             bindings = <
-&none      &none      &none      &none      &none      &none                                           &none               &none   &none          &none             &none          &none
-&kp GRAVE  &none      &none      &none      &none      &none                                           &none               &none   &none          &none             &none          &trans
-&trans     &kp N1     &kp N2     &kp N3     &kp N4     &kp N5     &none         &none                  &h6                 &j7     &k8            &l9               &kp N0         &trans
-&trans     &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(B)  &kp LC(HOME)  &kp LC(END)            &kp F7              &kp F8  &kp LESS_THAN  &kp GREATER_THAN  &kp BACKSLASH  &trans
-&trans     &trans     &trans     &trans     &trans     &trans     &trans        &mt RCTRL LS(LC(TAB))  &mt RSHIFT LC(TAB)  &none   &none          &trans            &trans         &trans
+&none      &none            &none        &none      &none       &none                                             &none               &none          &none          &none             &none          &none
+&kp GRAVE  &kp EXCLAMATION  &kp AT_SIGN  &kp POUND  &kp DOLLAR  &kp PERCENT                                       &kp CARET           &kp AMPERSAND  &kp ASTERISK   &kp MINUS         &kp EQUAL      &trans
+&trans     &kp N1           &kp N2       &kp N3     &kp N4      &kp N5       &none         &none                  &h6                 &j7            &k8            &l9               &kp N0         &trans
+&trans     &kp LC(Z)        &kp LC(X)    &kp LC(C)  &kp LC(V)   &kp LC(B)    &kp LC(HOME)  &kp LC(END)            &kp F7              &kp F8         &kp LESS_THAN  &kp GREATER_THAN  &kp BACKSLASH  &trans
+&trans     &trans           &trans       &trans     &trans      &trans       &trans        &mt RCTRL LS(LC(TAB))  &mt RSHIFT LC(TAB)  &none          &none          &trans            &trans         &trans
             >;
         };
     };
