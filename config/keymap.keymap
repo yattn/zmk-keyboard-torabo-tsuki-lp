@@ -316,7 +316,7 @@
         tabspace: tabspace {
             compatible = "zmk,behavior-mod-morph";
             label = "TABSPACE";
-            bindings = <&kp SPACE>, <&kp LS(TAB)>;
+            bindings = <&kp SPACE>, <&kp TAB>;
 
             #binding-cells = <0>;
             mods = <(MOD_LCTL|MOD_LGUI)>;
@@ -326,7 +326,7 @@
         tabsdelete: tabsdelete {
             compatible = "zmk,behavior-mod-morph";
             label = "TABSDELETE";
-            bindings = <&kp DEL>, <&kp TAB>;
+            bindings = <&kp DEL>, <&kp LS(TAB)>;
 
             #binding-cells = <0>;
             mods = <(MOD_LCTL|MOD_LGUI)>;
@@ -340,27 +340,27 @@
 
             #binding-cells = <0>;
             mods = <(MOD_RCTL|MOD_RSFT)>;
-            keep-mods = <(MOD_RSFT)>;
+            keep-mods = <(MOD_RCTL)>;
         };
 
         j7: j7 {
             compatible = "zmk,behavior-mod-morph";
             label = "J7";
-            bindings = <&kp N7>, <&kp LEFT>;
+            bindings = <&kp N7>, <&kp DOWN>;
 
             #binding-cells = <0>;
             mods = <(MOD_RCTL|MOD_RSFT)>;
-            keep-mods = <(MOD_RSFT)>;
+            keep-mods = <(MOD_RCTL)>;
         };
 
         k8: k8 {
             compatible = "zmk,behavior-mod-morph";
             label = "K8";
-            bindings = <&kp N8>, <&kp LEFT>;
+            bindings = <&kp N8>, <&kp UP>;
 
             #binding-cells = <0>;
             mods = <(MOD_RCTL|MOD_RSFT)>;
-            keep-mods = <(MOD_RSFT)>;
+            keep-mods = <(MOD_RCTL)>;
         };
 
         l9: l9 {
@@ -399,11 +399,11 @@
 
         layer_2 {
             bindings = <
-&none      &none      &none      &none      &none      &none                                      &none              &none   &none             &none              &none          &none
-&kp GRAVE  &none      &none      &none      &none      &none                                      &none              &none   &none             &none              &none          &trans
-&trans     &kp N1     &kp N2     &kp N3     &kp N4     &kp N5     &none   &none                   &h6                &j7     &k8               &l9                &kp N0         &trans
-&trans     &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(B)  &trans  &trans                  &kp F7             &kp F8  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH  &trans
-&trans     &trans     &trans     &trans     &trans     &trans     &trans  &mt RSHIFT LS(LC(TAB))  &mt RCTRL LC(TAB)  &none   &none             &trans             &trans         &trans
+&none      &none      &none      &none      &none      &none                                     &none               &none   &none             &none              &none          &none
+&kp GRAVE  &none      &none      &none      &none      &none                                     &none               &none   &none             &none              &none          &trans
+&trans     &kp N1     &kp N2     &kp N3     &kp N4     &kp N5     &none   &none                  &h6                 &j7     &k8               &l9                &kp N0         &trans
+&trans     &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(B)  &trans  &trans                 &kp F7              &kp F8  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH  &trans
+&trans     &trans     &trans     &trans     &trans     &trans     &trans  &mt RCTRL LS(LC(TAB))  &mt RSHIFT LC(TAB)  &none   &none             &trans             &trans         &trans
             >;
         };
     };
