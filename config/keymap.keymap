@@ -316,10 +316,21 @@
         tabspace: tabspace {
             compatible = "zmk,behavior-mod-morph";
             label = "TABSPACE";
-            bindings = <&kp SPACE>, <&kp TAB>;
+            bindings = <&kp SPACE>, <&kp LS(TAB)>;
 
             #binding-cells = <0>;
             mods = <(MOD_LCTL|MOD_LGUI)>;
+            keep-mods = <(MOD_LCTL|MOD_LGUI)>;
+        };
+
+        tabsdelete: tabsdelete {
+            compatible = "zmk,behavior-mod-morph";
+            label = "TABSDELETE";
+            bindings = <&kp DEL>, <&kp TAB>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL|MOD_LGUI)>;
+            keep-mods = <(MOD_LCTL|MOD_LGUI)>;
         };
     };
 
@@ -328,11 +339,11 @@
 
         layer_0 {
             bindings = <
-&none           &none          &none           &none        &none           &none                                   &none      &none  &none      &none          &none          &none
-&imesc          &kp Q          &kp W           &kp E        &kp R           &kp T                                   &kp Y      &kp U  &kp I      &kp O          &kp P          &kp BSPC
-&kp HOME        &kp A          &kp S           &kp D        &kp F           &kp G        &none           &none      &kp H      &kp J  &kp K      &kp L          &kp SEMI       &kp ENTER
-&mt LSHIFT END  &kp Z          &kp X           &kp C        &kp V           &kp B        &kp PAGE_UP     &kp PG_DN  &kp N      &kp M  &kp COMMA  &kp DOT        &kp FSLH       &kp F20
-&kp LCTRL       &mt LGUI LEFT  &mt LALT RIGHT  &kp LS(TAB)  &mt LSHIFT TAB  &lt 2 SPACE  &mt LGUI SPACE  &kp DEL    &tabspace  &none  &none      &kp LC(PG_UP)  &kp LC(PG_DN)  &mo 1
+&none            &none          &none           &none     &none           &none                                     &none      &none  &none      &none          &none          &none
+&imesc           &kp Q          &kp W           &kp E     &kp R           &kp T                                     &kp Y      &kp U  &kp I      &kp O          &kp P          &kp BSPC
+&kp UP           &kp A          &kp S           &kp D     &kp F           &kp G        &none           &none        &kp H      &kp J  &kp K      &kp L          &kp SEMI       &kp ENTER
+&mt LSHIFT DOWN  &kp Z          &kp X           &kp C     &kp V           &kp B        &kp PG_UP       &kp PG_DN    &kp N      &kp M  &kp COMMA  &kp DOT        &kp FSLH       &kp F20
+&kp LCTRL        &mt LGUI LEFT  &mt LALT RIGHT  &kp HOME  &mt LSHIFT END  &lt 2 SPACE  &mt LGUI SPACE  &tabsdelete  &tabspace  &none  &none      &kp LC(PG_UP)  &kp LC(PG_DN)  &mo 1
             >;
         };
 
@@ -348,11 +359,11 @@
 
         layer_2 {
             bindings = <
-&none      &none       &none       &none       &none       &none                       &none        &none       &none             &none              &none          &none
-&kp GRAVE  &kp LS(N1)  &kp LS(N2)  &kp LS(N3)  &kp LS(N4)  &kp LS(N5)                  &kp LS(N6)   &kp LS(N7)  &kp LS(N8)        &kp MINUS          &kp EQUAL      &trans
-&trans     &kp N1      &kp N2      &kp N3      &kp N4      &kp N5      &none   &none   &kp N6       &kp N7      &kp N8            &kp N9             &kp N0         &trans
-&trans     &kp LC(Z)   &kp LC(X)   &kp LC(C)   &kp LC(V)   &kp LC(B)   &trans  &trans  &kp F7       &kp F8      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH  &trans
-&trans     &trans      &trans      &trans      &trans      &trans      &trans  &trans  &kp LC(TAB)  &none       &none             &trans             &trans         &trans
+&none      &none       &none       &none       &none       &none                                &none        &none       &none             &none              &none          &none
+&kp GRAVE  &kp LS(N1)  &kp LS(N2)  &kp LS(N3)  &kp LS(N4)  &kp LS(N5)                           &kp LS(N6)   &kp LS(N7)  &kp LS(N8)        &kp MINUS          &kp EQUAL      &trans
+&trans     &kp N1      &kp N2      &kp N3      &kp N4      &kp N5      &none   &none            &kp N6       &kp N7      &kp N8            &kp N9             &kp N0         &trans
+&trans     &kp LC(Z)   &kp LC(X)   &kp LC(C)   &kp LC(V)   &kp LC(B)   &trans  &trans           &kp F7       &kp F8      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH  &trans
+&trans     &trans      &trans      &trans      &trans      &trans      &trans  &kp LS(LC(TAB))  &kp LC(TAB)  &none       &none             &trans             &trans         &trans
             >;
         };
     };
