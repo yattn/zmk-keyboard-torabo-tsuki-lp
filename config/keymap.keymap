@@ -379,18 +379,18 @@
 
         layer_0 {
             bindings = <
-&none           &none           &none           &none     &none           &none                                     &none      &none  &none      &none     &none      &none
-&imesc          &kp Q           &kp W           &kp E     &kp R           &kp T                                     &kp Y      &kp U  &kp I      &kp O     &kp P      &kp BSPC
-&kp HOME        &kp A           &kp S           &kp D     &kp F           &kp G        &none           &none        &kp H      &kp J  &kp K      &kp L     &kp SEMI   &kp ENTER
-&mt LSHIFT END  &kp Z           &kp X           &kp C     &kp V           &kp B        &kp PG_UP       &kp PG_DN    &kp N      &kp M  &kp COMMA  &kp DOT   &kp FSLH   &kp F20
-&kp LCTRL       &mt LGUI PG_UP  &mt LALT PG_DN  &kp HOME  &mt LSHIFT END  &lt 2 SPACE  &mt LGUI SPACE  &tabsdelete  &tabspace  &none  &none      &kp LEFT  &kp RIGHT  &mo 1
+&none           &none           &none           &none        &none           &none                                     &none      &none  &none      &none          &none          &none
+&imesc          &kp Q           &kp W           &kp E        &kp R           &kp T                                     &kp Y      &kp U  &kp I      &kp O          &kp P          &kp BSPC
+&kp HOME        &kp A           &kp S           &kp D        &kp F           &kp G        &none           &none        &kp H      &kp J  &kp K      &kp L          &kp SEMI       &kp ENTER
+&mt LSHIFT END  &kp Z           &kp X           &kp C        &kp V           &kp B        &kp LC(HOME)    &kp LC(END)  &kp N      &kp M  &kp COMMA  &kp DOT        &kp FSLH       &kp F20
+&kp LCTRL       &mt LGUI PG_UP  &mt LALT PG_DN  &kp LS(TAB)  &mt LSHIFT TAB  &lt 2 SPACE  &mt LGUI SPACE  &tabsdelete  &tabspace  &none  &none      &kp LC(PG_UP)  &kp LC(PG_DN)  &mo 1
             >;
         };
 
         layer_1 {
             bindings = <
 &none   &none   &none   &none   &none   &none                            &none             &none      &none      &none      &none      &none
-&trans  &trans  &trans  &trans  &trans  &trans                           &kp LC(C)         &kp PG_UP  &kp F21    &kp F22    &kp LC(V)  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                           &kp LC(C)         &kp PG_UP  &kp F22    &kp F23    &kp LC(V)  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &none   &none            &kp F21           &mkp LCLK  &mkp MCLK  &mkp RCLK  &trans     &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp MB5         &mkp MB4          &trans     &trans     &trans     &trans     &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &msc MOVE_Y(20)  &msc MOVE_Y(-20)  &none      &none      &trans     &trans     &trans
@@ -399,11 +399,11 @@
 
         layer_2 {
             bindings = <
-&none      &none      &none      &none      &none      &none                                  &none          &none   &none             &none              &none          &none
-&kp GRAVE  &none      &none      &none      &none      &none                                  &none          &none   &none             &none              &none          &trans
-&trans     &kp N1     &kp N2     &kp N3     &kp N4     &kp N5     &none   &none               &h6            &j7     &k8               &l9                &kp N0         &trans
-&trans     &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(B)  &trans  &trans              &kp F7         &kp F8  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH  &trans
-&trans     &trans     &trans     &trans     &trans     &trans     &trans  &mt RSHIFT LS(TAB)  &mt RCTRL TAB  &none   &none             &trans             &trans         &trans
+&none      &none      &none      &none      &none      &none                                      &none              &none   &none             &none              &none          &none
+&kp GRAVE  &none      &none      &none      &none      &none                                      &none              &none   &none             &none              &none          &trans
+&trans     &kp N1     &kp N2     &kp N3     &kp N4     &kp N5     &none   &none                   &h6                &j7     &k8               &l9                &kp N0         &trans
+&trans     &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(B)  &trans  &trans                  &kp F7             &kp F8  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH  &trans
+&trans     &trans     &trans     &trans     &trans     &trans     &trans  &mt RSHIFT LS(LC(TAB))  &mt RCTRL LC(TAB)  &none   &none             &trans             &trans         &trans
             >;
         };
     };
